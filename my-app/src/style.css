@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-image: url(./assets/home.png);
+  background-size: cover;
+  margin: 0;
+  padding: 20px;
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-family: "Amatic SC", cursive;
+  font-weight: 700;
+  font-size: 48px;
+  color: #e90000;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section.elder {
+  width: 30%;
+}
+.section-header {
+  margin: 0;
+}
+.elder-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  gap: 20px;
+}
+.elder-item {
+  max-width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.elder-item h3 {
+  margin: 0;
+}
+.elder-img {
+  cursor: pointer;
+  max-width: 90%;
+}
+.elder-img:hover {
+  box-shadow: 0px 0px 10px 10px gold;
+}
+.elder-item.active > .elder-img {
+  box-shadow: 0px 0px 5px 5px blue;
+}
+.section.difficult {
+  width: 10%;
+}
+.difficult-container {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.difficult-btn {
+  cursor: pointer;
+  background: none;
+  max-width: 120px;
+  width: 100%;
+  height: 30px;
+  color: white;
+  border-width: 1px;
+  border-color: white;
+}
+.difficult-btn:hover {
+  box-shadow: 0px 0px 10px 10px gold;
+}
+.difficult-btn.active {
+  box-shadow: 0px 0px 5px 5px blue;
+}
+
+.section.deck {
+  width: 30%;
+}
+.decks-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deck-start {
+  cursor: pointer;
+  background: none;
+  max-width: 100px;
+  width: 100%;
+  height: 70px;
+  color: white;
+  border-width: 1px;
+  border-color: white;
+}
+.deck-start:hover {
+  box-shadow: 0px 0px 10px 10px gold;
+}
+
+.none {
+  display: none !important; /* TO DO ПЕРЕНЕСТИ В КОНЕЦ */
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  /* background-color: darkgray; */
+  /* opacity: 0.7; */
+  gap: 40px;
+}
+.step-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.step {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.step-header {
+  margin: 0;
+}
+.item-container {
+  display: flex;
+  gap: 10px;
+}
+.step-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+}
+.green-item {
+  background-color: darkgreen;
+}
+.brown-item {
+  background-color: brown;
+}
+.blue-item {
+  background-color: darkblue;
+}
+.card-selector-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.card-selector-btn {
+  cursor: pointer;
+  width: 150px;
+  height: 225px;
+  background-image: url("./assets/mythicCardBackground.png");
+}
+.current-card {
+  width: 150px;
+  height: 225px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
