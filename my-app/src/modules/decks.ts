@@ -32,15 +32,14 @@ function openDeck() {
 }
 
 startDeckBtn.addEventListener("click", () => {
-  if (elder) {
-    openDeck();
-    showDeckTracker();
-    showCardSelector();
-    cardIndex = 0;
-    deck = generateDeck();
-  } else {
-    console.log("Выберите древнего");
-  }
+  openDeck();
+  showDeckTracker();
+  showCardSelector();
+  cardIndex = 0;
+  deck = generateDeck();
+  console.log(`Древний: ${elder.name}`);
+  console.log(`Сложность: ${difficult.name}`);
+  console.log(`Колода: `, deck);
 });
 
 function showCardSelector() {

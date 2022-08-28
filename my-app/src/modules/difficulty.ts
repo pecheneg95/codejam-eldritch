@@ -1,3 +1,4 @@
+import getRandomIntInclusive from "../helpers/getRandomIntInclusive";
 import difficultData from "./../data/difficulties";
 import { resetDeck } from "./decks";
 
@@ -13,7 +14,7 @@ type Difficult = {
   };
 };
 
-let difficultNumber = 2; //TO DO УБРАТЬ ЗАДАННОЕ ПО УМОЛЧАНИЮ
+let difficultNumber = getRandomIntInclusive(0, 4);
 let difficult: Difficult = difficultData[difficultNumber];
 
 difficultContainer.addEventListener("click", (event) => {

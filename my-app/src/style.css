@@ -122,17 +122,11 @@ h1 {
   box-shadow: 0px 0px 10px 10px gold;
 }
 
-.none {
-  display: none !important; /* TO DO ПЕРЕНЕСТИ В КОНЕЦ */
-}
-
 .card-container {
   display: flex;
   flex-direction: column;
   width: 400px;
   height: 400px;
-  /* background-color: darkgray; */
-  /* opacity: 0.7; */
   gap: 40px;
 }
 .step-container {
@@ -182,6 +176,7 @@ h1 {
   width: 150px;
   height: 225px;
   background-image: url("./assets/mythicCardBackground.png");
+  background-size: cover;
 }
 .current-card {
   width: 150px;
@@ -189,4 +184,7 @@ h1 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+}
+.none {
+  display: none;
 }

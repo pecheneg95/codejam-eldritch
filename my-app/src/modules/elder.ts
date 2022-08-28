@@ -1,3 +1,4 @@
+import getRandomIntInclusive from "../helpers/getRandomIntInclusive";
 import eldersData from "./../data/ancients";
 import { resetDeck } from "./decks";
 
@@ -26,7 +27,7 @@ type Elder = {
 };
 
 let elderNumber: number;
-let elder: Elder = eldersData[0]; //TO DO УБРАТЬ ЗАДАННОЕ ПО УМОЛЧАНИЮ
+let elder: Elder = eldersData[getRandomIntInclusive(0, 3)];
 
 elderContainer.addEventListener("click", (event) => {
   const element = event.target as HTMLElement;
