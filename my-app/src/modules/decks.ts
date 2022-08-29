@@ -68,9 +68,9 @@ function generateDeck() {
 
   const rules = difficult.rules;
 
-  const greenDeck = createDeck("green", countGreenCard, rules);
-  const brownDeck = createDeck("brown", countBrownCard, rules);
-  const blueDeck = createDeck("blue", countBlueCard, rules);
+  const greenDeck = shufleArray(createDeck("green", countGreenCard, rules));
+  const brownDeck = shufleArray(createDeck("brown", countBrownCard, rules));
+  const blueDeck = shufleArray(createDeck("blue", countBlueCard, rules));
 
   const greenDeckStep1 = shufleArray(greenDeck.slice(0, elder.firstStage.greenCards));
   const brownDeckStep1 = shufleArray(brownDeck.slice(0, elder.firstStage.brownCards));
